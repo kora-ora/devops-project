@@ -46,4 +46,4 @@ echo " "
 
 #Top 5 Processes by Memory Usage
 echo "Top 5 Processes by Memory Usage"
-ps aux --sort=-pcpu | head -n 6
+ps aux --sort=-pmem | head -n 6

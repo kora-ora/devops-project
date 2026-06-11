@@ -1,3 +1,2 @@
 # devops-project
-# Initial commit
 
