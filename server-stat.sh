@@ -32,7 +32,7 @@ echo " "
 
 #Disk Usage
 echo "Disk Usage"
-df -h | awk 'NR==5 {print "Total Disk : " $2 ,
+df -h | awk '$NF=="/" {print "Total Disk : " $2 ,
         "\nUsed Disk  : " $3 ,"(" ($3*100)/$2"%)" ,
         "\nFree Disk  : " $4 ,"(" ($4*100/$2"%)")}'
 echo " "
